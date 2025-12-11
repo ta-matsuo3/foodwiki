@@ -1,9 +1,10 @@
 import { prisma } from "@/lib/prisma";
 import { CreateMessageForm } from "../components/CreateMessageForm";
+import { Post } from "@prisma/client";
 
 export default async function Home() {
     // 1. サーバー側で直接データを取得（APIを叩く必要なし！）
-    const messages = await prisma.post.findMany({
+    const messages: Post[] = await prisma.post.findMany({
         orderBy: { createdAt: "desc" },
     });
 
@@ -17,7 +18,7 @@ export default async function Home() {
             <hr />
 
             <ul>
-                {messages.map((msg) => (
+                {messages.map((msg: Post) => (
                     <li key={msg.id}>
                         {msg.content} <small>({msg.createdAt.toLocaleString()})</small>
                     </li>
