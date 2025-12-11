@@ -1,0 +1,19 @@
+.headerWrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: #FFE0C2;
+    width: 100%;
+    height: 80px;
+
+    .btnWrap {
+        display: flex;
+        margin-inline-end: 1rem;
+    }
+
+    .logo {
+        width: 150px;
+        margin: 0.5rem;
+    }
+}
