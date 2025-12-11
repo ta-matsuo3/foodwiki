@@ -14,6 +14,7 @@ export default function Home() {
           <li><a href="#">ホーム</a></li>
           <Link href="/detail">食材詳細</Link>
           <Link href="/create">登録画面</Link>
+          <Link href="/test">テスト</Link>
         </nav>
       </div>
     </>
