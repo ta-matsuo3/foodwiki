@@ -2,6 +2,8 @@ import { prisma } from "@/lib/prisma";
 import { CreateMessageForm } from "../components/CreateMessageForm";
 import { Post } from "@prisma/client";
 
+export const dynamic = "force-dynamic";
+
 export default async function Home() {
     // 1. サーバー側で直接データを取得（APIを叩く必要なし！）
     const messages: Post[] = await prisma.post.findMany({
