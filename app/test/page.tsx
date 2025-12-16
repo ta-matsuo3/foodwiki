@@ -10,7 +10,7 @@ export default async function Home() {
 
     return (
         <main style={{ padding: "2rem" }}>
-            <h1>掲示板</h1>
+            <h1>掲示板 </h1>
 
             {/* 投稿フォーム（後述） */}
             <CreateMessageForm />
