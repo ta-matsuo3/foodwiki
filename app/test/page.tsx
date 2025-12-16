@@ -1,6 +1,6 @@
 import { prisma } from "@/lib/prisma";
 import { CreateMessageForm } from "../components/CreateMessageForm";
-import { Post } from "@prisma/client";
+import { Post } from "../generated/prisma/client";
 
 export default async function Home() {
     // 1. サーバー側で直接データを取得（APIを叩く必要なし！）
